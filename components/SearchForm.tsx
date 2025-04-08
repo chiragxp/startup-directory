@@ -14,6 +14,7 @@ const SearchForm = ({ query }: { query?: string }) => {
       />
 
       <div className="flex gap-2">
+        {/* Clearing the search query needs to be done on client side, so made a separate component of SearchFormReset  */}
         {query && <SearchFormReset />}
         <button type="submit" className="search-btn text-white">
           <Search className="size-5" />
